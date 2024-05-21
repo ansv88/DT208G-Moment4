@@ -1,27 +1,63 @@
-# CourseSchedule
+# DT208G TypeScript, moment 4 - Angular II
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+Detta projekt är en webbplats skapad som en del av kursen DT208G TypeScript vid Mittuniversitetet. Webbplatsen använder Angular och TypeScript för att visa ett ramschema för programmet Webbutveckling i en tabell.
 
-## Development server
+## Syfte och mål
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Träna på att göra HTTP-anrop med Angular och HttpClient.
+- Skapa services.
+- Presentera data på skärmen från resultat från HTTP-anrop.
+- Sortera och söka data.
 
-## Code scaffolding
+## Konstruktion
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Webbplatsen består av flera komponenter inklusive huvudsidan, en 404-sida, header och footer. JSON-data hämtas från en extern URL via services med hjälp av HttpClient. Data presenteras och hanteras genom följande:
 
-## Build
+- **Komponenter:** Huvudsida, 404-sida, header, footer.
+- **Datahämtning:** JSON-data hämtas via HttpClient och hanteras av services.
+- **Visning av data:** FormsModule används för two-way data binding med `[(ngModel)]`, och `CommonModule` används för tillgång till `*ngFor` och `*ngIf`.
+- **Filtrering och Sortering:** Kursdata kan filtreras genom ett sökfält och kan sorteras i stigande eller fallande ordning utifrån kurskod, kursnamn eller progression via funktioner i course.component.ts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Styling
+Styling sker med CSS där varje komponent har egna stilregler, och globala stilregler finns i styles.css. Webbplatsen är responsiv och fungerar på olika skärmstorlekar.
 
-## Running unit tests
+## Utveckling
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Nedan finns en översättning och sammanfattning av den autogenererade readme-instruktionen som skapas när man skapar ett nytt Angularprojekt.
+Det är steg-för-steg instruktioner för hur man skapar ett Angularprojekt.
 
-## Running end-to-end tests
+### 1. Installera Angular CLI globalt:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`npm install -g @angular/cli`
 
-## Further help
+### 2. Skapa ett nytt projekt :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`ng new project-name`
+
+### 3. Starta utvecklingsservern:
+
+`ng serve --open` (öppnas i webbläsaren till `http://localhost:4200/`).
+
+### 4. Generera nya komponenter:
+
+`ng generate component component-name`
+
+Man kan också använda `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+### Bygg projektet:
+
+`ng build`
+
+### Kör enhetstester:
+
+`ng test`
+
+### Kör end-to-end-tester:
+
+`ng e2e`
+
+För att använda detta kommando, lägg först till ett paket som implementerar end-to-end testfunktionalitet.
+
+### Ytterligare hjälp
+
+För mer hjälp om Angular CLI, använd `ng help` eller besök [Angular CLI Overview and Command Reference](https://angular.io/cli).
