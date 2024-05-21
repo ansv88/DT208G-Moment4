@@ -11,12 +11,12 @@ Detta projekt är en webbplats som är skapad som en del av kursen DT208G TypeSc
 
 ## Konstruktion
 
-Webbplatsen består av flera komponenter inklusive huvudsidan, en 404-sida, header och footer. JSON-data hämtas från en extern URL via services med hjälp av HttpClient. Data presenteras och hanteras genom följande:
+Webbplatsen består av flera komponenter. JSON-data hämtas från en extern URL. Datan presenteras och hanteras genom följande:
 
 - **Komponenter:** Huvudsida, 404-sida, header, footer.
-- **Datahämtning:** JSON-data hämtas via HttpClient och hanteras av services.
-- **Visning av data:** FormsModule används för two-way data binding med `[(ngModel)]`, och `CommonModule` används för tillgång till `*ngFor` och `*ngIf`.
-- **Filtrering och Sortering:** Kursdata kan filtreras genom ett sökfält och kan sorteras i stigande eller fallande ordning utifrån kurskod, kursnamn eller progression via funktioner i course.component.ts
+- **Datahämtning:** JSON-data hämtas med HttpClient i 'services/courses.service.ts'.
+- **Visning av data:** FormsModule används för two-way data binding med '[(ngModel)]', och 'CommonModule' används för tillgång till '*ngFor' och '*ngIf'.
+- **Filtrering och Sortering:** Kursdata kan filtreras genom ett sökfält och kan sorteras i stigande eller fallande ordning utifrån kurskod, kursnamn eller progression. Funktionerna finns i course.component.ts.
 
 ## Styling
 Styling sker med CSS där varje komponent har egna stilregler, och globala stilregler finns i styles.css. Webbplatsen är responsiv och fungerar på olika skärmstorlekar.
