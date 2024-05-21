@@ -1,0 +1,94 @@
+form {
+  width: 80%;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  margin: 5vh  auto;
+}
+
+input {
+  font-size: 1.05em;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+table {
+  table-layout: fixed;
+  width: 90%;
+  max-width: 1200px;
+  margin: 10vh auto;
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+  box-shadow: 12px 12px 5px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  outline: 1px solid lightgray;
+  overflow: hidden;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+thead th:nth-child(2) {
+  width: 50%;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+thead th:nth-child(3) {
+  width: 35%;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+td:nth-child(3) {
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  form {
+      width: 50%;
+  }
+
+  input {
+    font-size: 1.1em;
+  }
+
+  table {
+      width: 100%;
+    }
+
+    th {
+      font-size: 1.2em;
+      padding: 10px 10px 10px 20px;
+    }
+
+    td {
+      font-size: 1.1em;
+      padding: 10px 10px 10px 20px;
+    }
+    
+    td:nth-child(3) {
+      text-align: left;
+    }
+}

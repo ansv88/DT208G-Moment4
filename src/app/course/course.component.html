@@ -1,0 +1,24 @@
+<form role="search">
+  <input type="search" name="q" placeholder="Sök efter kurskod eller kursnamn" aria-label="Sök efter kurskod eller kursnamn"
+    [(ngModel)]="filterValue" (input)="filterCourses()" />
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th id="code" (click)="sortCourses('code')">Kurskod</th>
+      <th id="name" (click)="sortCourses('coursename')">Namn</th>
+      <th id="progression" (click)="sortCourses('progression')">Progression</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let course of filteredCourses">
+      <td>{{ course.code }}</td>
+      <td>{{ course.coursename }}</td>
+      <td>{{ course.progression }}</td>
+    </tr>
+    <tr *ngIf="filteredCourses.length === 0">
+      <td class="error" colspan="3">Inga kurser hittades.</td>
+    </tr>
+  </tbody>
+</table>
