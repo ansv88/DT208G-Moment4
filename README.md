@@ -11,7 +11,8 @@ Detta projekt är en webbplats som är skapad som en del av kursen DT208G TypeSc
 
 ## Konstruktion
 
-Webbplatsen består av flera komponenter. JSON-data hämtas från en extern URL. Datan presenteras och hanteras genom följande:
+Webbplatsen består av flera komponenter. JSON-data hämtas från en extern URL. <br>
+Datan presenteras och hanteras genom följande:
 
 - **Komponenter:** Huvudsida, 404-sida, header, footer.
 - **Datahämtning:** JSON-data hämtas med HttpClient i ' services/courses.service.ts '.
