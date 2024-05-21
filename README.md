@@ -20,7 +20,7 @@ Datan presenteras och hanteras genom följande:
 - **Filtrering och Sortering:** Kursdata kan filtreras genom ett sökfält och kan sorteras i stigande eller fallande ordning utifrån kurskod, kursnamn eller progression. Funktionerna finns i course.component.ts.
 
 ## Styling
-Styling sker med CSS där varje komponent har egna stilregler, och globala stilregler finns i styles.css. Webbplatsen är responsiv och fungerar på olika skärmstorlekar.
+Styling sker med CSS där varje komponent har egna stilregler, och globala stilregler finns i styles.css. <br> Webbplatsen är responsiv och fungerar på olika skärmstorlekar.
 
 ## Utveckling
 
