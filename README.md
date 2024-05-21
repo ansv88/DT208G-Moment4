@@ -1,6 +1,6 @@
 # DT208G TypeScript, moment 4 - Angular II
 
-Detta projekt är en webbplats skapad som en del av kursen DT208G TypeScript vid Mittuniversitetet. Webbplatsen använder Angular och TypeScript för att visa ett ramschema för programmet Webbutveckling i en tabell.
+Detta projekt är en webbplats som är skapad som en del av kursen DT208G TypeScript vid Mittuniversitetet. Webbplatsen använder Angular och TypeScript för att visa ett ramschema i en tabell för programmet Webbutveckling.
 
 ## Syfte och mål
 
